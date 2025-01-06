@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo" onclick="showPopup()">
+      <span>.ixx</span>
+      <img src="robot-icon.png" alt="Robot Icon" />
+    </div>
+    <nav>
+      <button onclick="login()">Login</button>
+      <button onclick="signup()">Sign Up</button>
+    </nav>
+  </header>
+
+  <!-- Main Upload Section -->
+  <main>
+    <div class="upload-box">
+      <p>Drag and drop your files here or click to upload.</p>
+      <input type="file" id="fileInput" multiple />
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Follow us:</p>
+    <a href="https://instagram.com/exetoxicc" target="_blank">Instagram</a>
+    <a href="https://instagram.com/exetoxicc/" target="_blank">Telegram</a>
+    <a href="https://youtube.com/@theprodigyjournal?feature=shared" target="_blank">YouTube</a>
+  </footer>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span onclick="closePopup()" class="close-btn">&times;</span>
+      <h3>Support Us!</h3>
+      <p>If you’d like to contribute, you can donate via Google Pay:</p>
+      <p><strong>UPI ID:</strong> anmolbajwadraft@okhdfcbank</p>
+      <div class="donation-options">
+        <button>₹10</button>
+        <button>₹20</button>
+        <button>₹50</button>
+        <button>₹100</button>
+        <button>₹500</button>
+        <button>₹1000</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
